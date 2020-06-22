@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li
+    :author: Super (苏勇智)
+    :url:
+    :copyright: © 2020 Super
     :license: MIT, see LICENSE for more details.
 """
 import os
@@ -78,6 +78,7 @@ def watchlist_with_static():
 @app.route('/flash')
 def just_flash():
     flash('I am flash, who is looking for me?')
+    flash(u'你好，我是闪电。')
     return redirect(url_for('index'))
 
 

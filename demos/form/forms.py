@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li
+    :author: Super (苏勇智)
+    :url:
+    :copyright: © 2020 Super
     :license: MIT, see LICENSE for more details.
 """
 from flask_ckeditor import CKEditorField
@@ -16,7 +16,7 @@ from wtforms.validators import DataRequired, Length, ValidationError, Email
 # 4.2.1 basic form example
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
-    password = PasswordField('Password', validators=[DataRequired(), Length(8, 128)])
+    password = PasswordField('Password', validators=[DataRequired(), Length(8, 12)])
     remember = BooleanField('Remember me')
     submit = SubmitField('Log in')
 
