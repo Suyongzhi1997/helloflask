@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li
+    :author: Super (苏勇智)
+    :url:
+    :copyright: © 2020 Super
     :license: MIT, see LICENSE for more details.
 """
 import os
@@ -59,8 +59,7 @@ class NewNoteForm(FlaskForm):
     submit = SubmitField('Save')
 
 
-class EditNoteForm(FlaskForm):
-    body = TextAreaField('Body', validators=[DataRequired()])
+class EditNoteForm(NewNoteForm):
     submit = SubmitField('Update')
 
 
